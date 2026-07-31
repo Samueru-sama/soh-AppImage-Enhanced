@@ -7,7 +7,7 @@ _OTRExporter_commit=32e088e28c8cdd055d4bb8f3f219d33ad37963f3
 
 pkgbase=soh
 pkgname=(soh soh-otr-exporter)
-pkgver=9.1.2
+pkgver=9.2.3
 pkgrel=1
 arch=("x86_64" "aarch64")
 url="https://shipofharkinian.com/"
