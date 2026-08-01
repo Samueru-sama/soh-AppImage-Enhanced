@@ -37,6 +37,9 @@ prepare() {
   cp -r ../libultraship-${_lus_commit} libultraship
   cp -r ../ZAPDTR-${_ZAPDTR_commit} ZAPDTR
   cp -r ../OTRExporter-${_OTRExporter_commit} OTRExporter
+  
+  # GCC 16 compilation patch
+  sed -i '1a #include <cstdint>' libultraship/include/ship/window/MouseStateManager.h
 }
 
 build() {
