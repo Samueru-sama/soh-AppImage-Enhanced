@@ -22,9 +22,9 @@ source=("${_reponame}-${pkgver}.tar.gz::https://github.com/HarbourMasters/${_rep
         "ZAPDTR-${_ZAPDTR_commit:0:8}.tar.gz::https://github.com/HarbourMasters/ZAPDTR/archive/${_ZAPDTR_commit}.tar.gz"
         "OTRExporter-${_OTRExporter_commit:0:8}.tar.gz::https://github.com/HarbourMasters/OTRExporter/archive/${_OTRExporter_commit}.tar.gz"
         "soh.desktop")
-sha256sums=('84d1e00cdb76928a1295b04469d4e1f344f57a0a652186dd0c4c4075c25a0f66'
-            '7361e5283faf39747e5eab010a4ae37dbc544bbd9e04d034179fca475f71cbe0'
-            '8016f735f9ef4e177384b0e51f243e374bf2f67ba66bdd5d21af8b185aed1635'
+sha256sums=('f7fbe26250c51abf96b5e280e8b99956084416cb3555381b6c5f19f6c4e9a8bb'
+            '60add82e2211861075223387e694fc43e0c0dcb2b31a19b8895e0ed0b37250af'
+            '555cb887dcdf5b9c76fbd703a9928de8792bc3d816253696cd52c2d8f2826601'
             '91a863f8899f2ebfc7868ccad4b5982ae416799c76358ce5b2c0edc11e42a672'
             'aa1632a4deb5796c1cd92c1b748016b2c2077e82564d2428e3d55db54fde1c48')
 
