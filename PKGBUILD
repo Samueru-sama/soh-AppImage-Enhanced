@@ -1,8 +1,8 @@
 # Maintainer: AltoXorg <atrl101 AT yahoo DOT com>
 
 _reponame=Shipwright
-_lus_commit=a8bdcab363571038bb71f195f21ec3e9033a220d
-_ZAPDTR_commit=684f21a475dcfeee89938ae1f4afc42768a3e7ef
+_lus_commit=956f1082122f219d536c20483df89469f4b807dc
+_ZAPDTR_commit=ee3397a365c5f350a60538c88f0643f155944836
 _OTRExporter_commit=32e088e28c8cdd055d4bb8f3f219d33ad37963f3
 
 pkgbase=soh
