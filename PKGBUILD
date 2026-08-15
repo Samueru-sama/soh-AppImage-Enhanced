@@ -20,13 +20,11 @@ options=('!debug' 'strip')
 source=("${_reponame}-${pkgver}.tar.gz::https://github.com/HarbourMasters/${_reponame}/archive/refs/tags/${pkgver}.tar.gz"
         "libultraship-${_lus_commit:0:8}.tar.gz::https://github.com/Kenix3/libultraship/archive/${_lus_commit}.tar.gz"
         "ZAPDTR-${_ZAPDTR_commit:0:8}.tar.gz::https://github.com/HarbourMasters/ZAPDTR/archive/${_ZAPDTR_commit}.tar.gz"
-        "OTRExporter-${_OTRExporter_commit:0:8}.tar.gz::https://github.com/HarbourMasters/OTRExporter/archive/${_OTRExporter_commit}.tar.gz"
-        "soh.desktop")
+        "OTRExporter-${_OTRExporter_commit:0:8}.tar.gz::https://github.com/HarbourMasters/OTRExporter/archive/${_OTRExporter_commit}.tar.gz")
 sha256sums=('84d1e00cdb76928a1295b04469d4e1f344f57a0a652186dd0c4c4075c25a0f66'
             '60add82e2211861075223387e694fc43e0c0dcb2b31a19b8895e0ed0b37250af'
             '555cb887dcdf5b9c76fbd703a9928de8792bc3d816253696cd52c2d8f2826601'
-            '91a863f8899f2ebfc7868ccad4b5982ae416799c76358ce5b2c0edc11e42a672'
-            'aa1632a4deb5796c1cd92c1b748016b2c2077e82564d2428e3d55db54fde1c48')
+            '91a863f8899f2ebfc7868ccad4b5982ae416799c76358ce5b2c0edc11e42a672')
 
 SHIP_PREFIX=/opt/soh
 
@@ -73,7 +71,6 @@ package_soh() {
   install -dm755 "${pkgdir}/usr/bin/"
   ln -s "${SHIP_PREFIX}/soh.elf" "${pkgdir}/usr/bin/soh"
   install -Dm644 "${srcdir}/${_reponame}-${pkgver}/build/soh/soh.o2r" "${pkgdir}/usr/bin/soh.o2r"
-  install -Dm644 "${srcdir}/soh.desktop" -t "${pkgdir}/usr/share/applications"
   install -Dm644 soh/macosx/sohIcon.png "${pkgdir}/usr/share/pixmaps/soh.png"
 }
 
