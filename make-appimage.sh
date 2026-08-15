@@ -3,7 +3,7 @@
 set -eu
 
 ARCH=$(uname -m)
-VERSION=$(pacman -Q soh | awk '{print $2; exit}') # example command to get version of application here
+VERSION=$(pacman -Q soh | awk '{print $2; exit}')
 export ARCH VERSION
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.hook"
@@ -19,7 +19,9 @@ mv /opt/soh/soh.o2r ./AppDir/bin
 mv /opt/soh/gamecontrollerdb.txt ./AppDir/bin
 echo 'SHARUN_WORKING_DIR=${SHARUN_DIR}/bin' >> ./AppDir/.env
 
-# Additional changes can be done in between here
-
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
+
+# Test the app for 12 seconds, if the test fails due to the app
+# having issues running in the CI use --simple-test instead
+quick-sharun --simple-test ./dist/*.AppImage
